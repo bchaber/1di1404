@@ -10,17 +10,17 @@ semilogx(N, 8*(3/4)*(QN + 5*Es)), hold on
 semilogx(N, pis, 'k-.');
 semilogx(N, 8*(3/4)*(QN));
 semilogx(N, 8*(3/4)*(QN - 5*Es)), hold off
-xlabel('Liczba punktów N [-]')
-ylabel('Przybli¿enie liczby pi [-]')
+xlabel('Liczba punktow N [-]')
+ylabel('Przyblizenie liczby pi [-]')
 grid on
-legend('górna granica', 'dok³adna warto¶æ', ...
-       'przybli¿ona warto¶æ', 'dolna granica')
+legend('gorna granica', 'dokladna wartosc', ...
+       'przyblizona wartosc', 'dolna granica')
 
 subplot(212)
 loglog(N, Es/max(Es), ...
        N, 1./sqrt(N) * sqrt(min(N)), 'k-.')
-xlabel('Liczba punktów N [-]')
-ylabel('Znormalizowana estymacja b³êdu [-]')
+xlabel('Liczba punktow N [-]')
+ylabel('Znormalizowana estymacja bledu [-]')
 legend('Estymacja', 'Teoria')
 grid on
 

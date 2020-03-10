@@ -15,7 +15,7 @@ result = 4 * QN
 scatter3(xbar(:,1), xbar(:,2), ...
     sqrt(sum(xbar .^ 2, 2)) <= 1.0, '.')
 xlabel('x [-]'), ylabel('y [-]')
-zlabel('funkcja przynale¿no¶ci do ko³a jednostkowego [bool]')
+zlabel('funkcja przynaleznosci do kola jednostkowego [bool]')
 
 function y = f(x)
     if dot(x, x) > 1.0

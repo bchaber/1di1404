@@ -4,13 +4,13 @@ tic
 [N, QN] = main();
 toc
 semilogx(N, 4*QN)
-xlabel('Liczba punktów N [-]')
-ylabel('Przybli¿enie liczby pi [-]')
+xlabel('Liczba punktow N [-]')
+ylabel('Przyblizenie liczby pi [-]')
 grid on
 
 loglog(N, abs(4*QN - pi))
-xlabel('Liczba punktów N [-]')
-ylabel('B³±d przybli¿enia liczby pi [-]')
+xlabel('Liczba punktow N [-]')
+ylabel('Blad przyblizenia liczby pi [-]')
 grid on
 
 function [Ns, Qs] = main()
